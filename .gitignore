@@ -1,0 +1,23 @@
+# ⚠️ 本仓库只放文档，不放安装包 —— 安装包一律作为 Release 附件上传。
+#
+# 为什么忽略 exe：每个版本的安装包约 70 MB，若提交进 git，会永久留在
+# 提交历史里，十几次发版后仓库就会膨胀到 GB 级且无法瘦身。
+# Release 附件不计入仓库体积，下载也更快。
+
+*.exe
+*.msi
+*.zip
+*.7z
+*.dmg
+*.AppImage
+
+# 构建产物 / 临时文件
+/target/
+/dist/
+*.log
+*.tmp
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
